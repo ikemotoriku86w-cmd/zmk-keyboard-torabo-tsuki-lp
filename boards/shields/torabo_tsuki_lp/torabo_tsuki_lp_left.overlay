@@ -5,3 +5,9 @@
 &pointing_listener {
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 };
+
+// 左トラボのセンサー感度を下げて、軽い接触での誤スクロールを抑える。
+// res-cpi の有効範囲は 608〜4826（38刻み）。値を上げれば敏感に戻る。
+&pointing_device {
+    res-cpi = <608>;
+};
