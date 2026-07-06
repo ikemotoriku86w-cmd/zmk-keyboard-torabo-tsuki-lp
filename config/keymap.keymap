@@ -13,6 +13,19 @@
             key-positions = <28 29>;
             layers = <2>;
         };
+        combo_f10 {
+            timeout-ms = <50>;
+            key-positions = <58 59>;   // LANG1 + LANG2
+            bindings = <&kp F10>;
+            layers = <0>;
+        };
+
+        combo_f7 {
+            timeout-ms = <50>;
+            key-positions = <57 60>;   // lt2 SPACE + lt3 ENTER
+            bindings = <&kp F7>;
+            layers = <0>;
+        };
     };
 
     keymap {
